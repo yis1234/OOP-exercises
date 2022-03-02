@@ -21,6 +21,7 @@ def absences():
     for i in range(len(absences_days)):
         if absences_days[i] == 0:
             not_absent.append(names[i])
+            not_absent.sort()
     # Find people with absences above average
     above_average = []
     for i in range(len(absences_days)):
